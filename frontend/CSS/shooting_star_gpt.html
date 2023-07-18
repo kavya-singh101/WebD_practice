@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shooting Star Animation with Transparent Login System</title>
+  <style>
+    body {
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-preview.jpg'); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+
+      /* background-image: url('https://www.jpl.nasa.gov/edu/images/events/whatsup/meteor_shower.gif'); */
+      /* background-image: url('https://scitechdaily.com/images/Skywatching-Astronomy-Meteor-Shower.gif'); */
+      /* background-image: url('https://scitechdaily.com/images/Skywatching-Astronomy-Meteor-Shower.gif'); */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    /* .sky {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 50, 0.7); 
+    } */
+
+    .star {
+      position: absolute;
+      background-color: #d0c2c2;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      opacity: 1;
+      animation: shooting-star linear infinite;
+    }
+
+    @keyframes shooting-star {
+      0% {
+        transform: translate(-100%, -100%);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translate(100vw, 100vh);
+        opacity: 0;
+      }
+    }
+
+    .login-form {
+      width: 25%;
+      height: 25%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      background-color: rgba(178, 107, 219, 0.5); 
+      padding: 70px;
+      border-radius: 50px;
+      text-align: center;
+    }
+
+    /* .login-form{
+      position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    } */
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      /* color: rgb(0, 0, 0); */
+      background-color: rgba(232, 221, 221, 0.589);
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login-form input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="sky"></div> -->
+
+  <div class="login-form">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <input type="text" name="username" placeholder="username" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+    <!-- </div> -->
+    <!-- <div class="forget">
+        <label for=""><input type="checkbox" checked>Remember Me &&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Forget Password</a></label>
+    </div>
+     <button>Log in</button> 
+    <div class="register">
+        <p>Don't have a account <a href="#">Register</a></p>
+    </div> -->
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <script>
+    function createStar() {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.animationDuration = Math.random() * 3 + 1 + 's';
+      star.style.animationDelay = Math.random() * 2 + 's';
+      document.body.appendChild(star);
+
+      star.addEventListener('animationend', () => {
+        star.remove();
+        createStar();
+      });
+    }
+
+    const numStars = 30;
+    for (let i = 0; i < numStars; i++) {
+      createStar();
+    }
+
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = e.target.elements.username.value;
+      const password = e.target.elements.password.value;
+      
+      if (username === 'hunny' && password === 'password') {
+        alert('Login successful!');
+      } else {
+        alert('Invalid username or password!');
+      }
+    });
+  </script>
+</body>
+</html>

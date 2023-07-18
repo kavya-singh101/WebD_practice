@@ -1,0 +1,33 @@
+/* -----------------------------------------responsiveness--------------------------------------------------- */
+#services{
+    flex-direction: column;
+}
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+}
+
+#home{
+    height: 370px;
+    padding: 5px 40px;
+}
+#home::before{
+    height: 545px;
+
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+.primaryh{
+    font-size: 23px;
+}
+#home p{
+    font-size: 13px;
+}

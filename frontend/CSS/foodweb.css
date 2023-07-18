@@ -1,0 +1,165 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CSS variables */
+:root {
+    --navbar-height: 59px;
+
+}
+
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 535%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* (Navigation bar) Logo and image */
+#logo {
+    margin: 20px 20px;
+}
+
+#logo img {
+    height: 75px;
+    border-radius: 50%;
+    filter: invert(1);
+    margin: 14px 14px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+/* (Navigation bar) List styling */
+
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: 60px;
+    padding: 3px 17px;
+    text-decoration: none;
+    text-decoration: 1.5px underline;
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 221, 255);
+    background-color: rgba(204, 0, 255, 0.608);
+    border-radius: 18px;
+
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 520px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#home::before {
+    content: "";
+    background: url(/food\ bg\ 2.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 72%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#home h1{
+    margin-top: 85px;
+    color: rgb(136, 246, 11);
+    text-align: center;
+}
+
+#home p{
+    /* margin-top: 75px; */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    background-color: #f2f2f2;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+
+/* utility classes */
+.primary {
+    font-size: 3.8rem;
+    padding-bottom: 15px;
+    padding-top: 17px;
+
+}
+.secondary{
+    font-size: 3rem;
+    padding: 12px;
+
+}
+
+.btn{
+    padding: 5px 20px;
+    border: 2px solid greenyellow;
+    background-color: green;
+    margin: 17px 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

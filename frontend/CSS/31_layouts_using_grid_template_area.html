@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layouts using grid template area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem; 
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+
+        }
+
+        #navbar{
+            grid-area: navbar;
+        }
+
+        #section{
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Help
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ea, consequuntur obcaecati repudiandae fuga maiores error id omnis dolorum eos quod commodi itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae magnam minima velit, iusto aspernatur? Nulla laudantium incidunt quia accusamus voluptatem dolorum, voluptatibus vero quisquam. Animi ratione magni corrupti laborum delectus cumque recusandae dolores. Alias itaque quae repellat natus aut, iusto dolor eius doloribus ad vel beatae deleniti qui aspernatur laborum quisquam asperiores, molestiae quaerat. Velit blanditiis et natus molestiae dolorem quos reiciendis iusto molestias doloribus quo. Repudiandae, aliquam? Nulla veniam laborum corrupti harum odio fugit voluptates voluptas, illum iusto rem! Nulla fugit natus voluptates necessitatibus eveniet iure rem totam minus consequuntur, voluptate aspernatur commodi nemo excepturi praesentium reiciendis explicabo!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus omnis consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia et ipsum? Soluta esse blanditiis iusto, nam assumenda minima, odio repudiandae iste maxime velit vel quod aspernatur delectus quidem laboriosam praesentium illum sunt cupiditate error dolorum mollitia, accusantium atque adipisci porro? Exercitationem, reprehenderit deserunt ipsa fugit cumque perferendis inventore maiores saepe tenetur quaerat suscipit pariatur quisquam optio molestiae ab voluptates illum sunt aperiam beatae alias harum eum ad commodi porro? Animi, praesentium odit? Architecto, voluptate rem eveniet atque soluta suscipit dolorum ut ratione dicta quidem facilis inventore eligendi, dignissimos, non temporibus odio iure ipsa recusandae ullam iste dolores possimus. Obcaecati?</div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quas iure reiciendis vel neque ad corporis vitae nulla. Aperiam cupiditate animi neque! Mollitia eos error eligendi sed eveniet, sint modi quaerat iste similique beatae provident numquam quidem veritatis nemo ratione sapiente, ipsam consectetur assumenda quis totam eum iusto nulla. Et.</footer>
+    </div>
+</body>
+
+</html>

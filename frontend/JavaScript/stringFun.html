@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions</title>
+
+</head>
+
+<body>
+    <h1>hello</h1>
+    <div id="iddd">
+
+    </div>
+    <script>
+        document.getElementById('iddd').innerHTML = '<h3>This is heading 3</h3>';
+
+        // String Functions
+        var a = 'This is a string';
+        // for finding the position of a string inside a string
+        var pos = a.indexOf('is');
+        console.log(pos);
+        // will provide the index value from the last
+        var pos = a.lastIndexOf('is');
+        console.log(pos);
+
+        // for finding substring in a given range
+        var substring = a.slice(1, 7);
+        console.log(substring);
+        var substr = a.substring(1,7);
+        console.log(substr);
+        // The diffeence between slice and substring is that alice can take -ve value but substring is not
+
+        // in this function first you will prove a index value then the no of strings you want after that
+        var substr1= a.substr(1,3);
+        console.log(substr1);
+
+        // For making any update in string
+        var replace= a.replace('string','kavya');
+        console.log(replace);
+
+        // for converting uppercase into lower case or vice versa
+        replace=a.toUpperCase();
+        console.log(replace);
+        replace=a.toLowerCase();
+        console.log(replace);
+
+        // for adding a new string in the last of prev string
+        var newstr= a.concat(' made by me');
+        console.log(newstr);
+
+        // For removing white space from the start and end of a string (not worke for between)
+        var a1='           this is string            '
+        console.log(a1);
+        var new_= a1.trim();
+        console.log(new_);
+
+        // for searching character in a string
+        var char = a.charAt(6);
+        console.log(char);
+        char = a.charCodeAt(7);
+        console.log(char);
+    </script>
+</body>
+
+</html>

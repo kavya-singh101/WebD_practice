@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and user interaction practice</title>
+
+</head>
+
+<body>
+    <script>
+        while (true) {
+            let age = prompt('Enter your age', '');
+            let conf = confirm('Are you sure you want to submit?');
+            if (conf && age >= 18) {
+                alert('Yes, you can drive');
+                break;
+            }
+            else if (age < 18) {
+                alert(`You can't drive`);
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

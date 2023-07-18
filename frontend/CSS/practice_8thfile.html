@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising on 8th file</title>
+    <!-- for heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- for para -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-image: url("https://media.tenor.com/AhZVUM7o9r0AAAAC/cherry-blossom-tree.gif"); */
+            background-image: url(/wallpaperflare.com_wallpaper\ \(2\).jpg);
+            /* background-image: url(/HD-wallpaper-enchanted-forest-forest-colorful-enchanted-forrest-fantasy-dark-cave-pink-deer-magical-waterfall-blue.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            /* if we float anything then the parent colour will be overflow */
+            border-radius: 15px;
+        }
+
+        .navbar ul {
+            /* to reclaim the background color after using float */
+            overflow: auto;
+            padding-right: 10px;
+        }
+
+        .navbar li {
+            padding-top: 3px;
+            float: right;
+            list-style: none;
+            margin: 13px 15px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: aquamarine;
+        }
+
+        .navbar li a:hover {
+            color: cyan;
+            background-color: rgb(42, 40, 40);
+            border-bottom: 2px solid red;
+            border-radius: 2px;
+        }
+
+        .item {
+            color: #01ffb9;
+            border: 3px solid rgb(106, 15, 180);
+            border-radius: 20px;
+            background-color: transparent;
+            margin: 12px 3px;
+            padding-left: 12px;
+            padding-right: 10px;
+
+        }
+
+        .para {
+            font-family: 'Playfair', serif;
+            text-align: justify;
+        }
+
+        .container {
+            width: 900px;
+            border: 1px solid rgb(115, 103, 103);
+
+            border-radius: 20px;
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/175/524/956/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
+            opacity: 0.92;
+            background-position: center;
+            background-size: cover;
+            padding: 0px 5px 0px 3px;
+            margin: 50px auto;
+        }
+
+        h3 {
+            margin: 20px auto;
+            font-family: 'Playfair', serif;
+            color: rgb(37, 213, 219);
+            border-bottom: 3px solid rgb(68, 81, 215);
+        }
+
+        #electronicspara {
+            padding-right: 1px;
+        }
+
+        #fruhed {
+
+            width: 55px;
+            padding-left: 4px;
+            border-radius: 3px;
+        }
+
+        #veghed {
+            width: 88px;
+            padding-left: 1px;
+            border-radius: 3px;
+        }
+
+        #eleched {
+            width: 97px;
+            padding-left: 4px;
+            border-radius: 3px;
+        }
+
+        #fruit {
+            float: left;
+            width: 49%;
+        }
+
+        #vegetable {
+            float: right;
+            width: 49.6%;
+        }
+
+        #electronic {
+            clear: both;
+            width: 99.6%;
+        }
+
+        h1 {
+            color: red;
+            text-align: center;
+            margin: 20px auto;
+            width: 300px;
+            font-family: 'Playfair', serif;
+            border-bottom: 4px solid rgb(68, 81, 215);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Conatct Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3 id="fruhed">Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque explicabo
+                illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium molestiae
+                tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos? Aliquam
+                perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem perspiciatis ipsam
+                laborum neque.</p>
+        </div>
+
+        <div id="vegetable" class="item">
+            <h3 id="veghed">Vegetables</h3>
+            <p id="vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+                explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium
+                molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos?
+                Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem
+                perspiciatis ipsam laborum neque.</p>
+        </div>
+
+        <div id="electronic" class="item">
+            <h3 id="eleched">Electronics</h3>
+            <p id="electronicspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+                explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium
+                molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos?
+                Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem
+                perspiciatis ipsam laborum neque.</p>
+        </div>
+    </div>
+</body>
+
+</html>

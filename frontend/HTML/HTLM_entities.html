@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+
+<body>
+    <div class="class">
+        <p>This is a paragraph</p>
+        <!-- it will not consider more that one space, rest of the space will be chop off -->
+    </div>
+    <!-- to avoid this we use HTML Entities -->
+    <div class="class">
+        <p>This is a &nbsp;&nbsp; paragraph with 2 spaces</p>
+        <!-- but don't use it we prefer css for this -->
+
+        <!-- to get a reserved characters like "<p>" in a paragraph or something -->
+        <p> this is used for paragraph writing &lt;p&gt; </p>
+        <!-- it is also used for those characters which can't available in your device -->
+        <p> symbol of pound &pound; and symbol of rupee &#8377;</p>
+        <p> &copysr; content subject to copyright &copy; </p>
+        <p>this is a empty character &#8203;</p>
+    </div>
+</body>
+
+</html>

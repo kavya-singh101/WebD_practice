@@ -1,0 +1,99 @@
+<!-- It is a 1D layout method for laying out items in rows or columns -->
+<!-- it is flexible boxes -->
+<!-- main-axis = x-axis cross-axis = y-axis  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* for making a flexbox */
+            display: flex;
+
+            /* properties for flex container */
+            /* flex-direction: row; it goes left->right (default value) */
+            /* flex-direction: column; /* it goes top to bottom */
+            /* flex-direction: row-reverse; your flax box start filling from right to left */
+            /* flex-direction: column-reverse; your flax box start filling from bottom to top */
+
+            /* is used to wrap objects for making responsive */
+            /* flex-wrap: wrap;  */
+            /* if you want to wrap in reverse */
+            /* flex-wrap: wrap-reverse;  */
+
+            /* flex-flow: row-reverse wrap; */
+            /*it is a one liner for direction and wrap */
+
+            /* justify-content: center; place items in center */
+            /* justify-content: space-between; makes same space between all items */
+            /* justify-content: space-evenly; makes same space from starting to end */
+            /* justify-content: space-around; makes same space from starting to end and space b/w items is high */
+            /* align-items: center; used to vertically center an item (margin from top and bottom is same) */
+            /* align-items: flex-end; items start from lacing at the bottom */
+            /* align-items: flex-start;  */
+            /* align-items: stretch; make vertically evenly spaces */
+
+            /* flex-direction: column; */
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        /* try to use below things for individual element(using ids) */
+
+        #item1 {
+            /* higher the order later it shows up in the container */
+            /* order: 2; max order item came at last and this goes in decreasing order from right to left */
+            flex-grow: 2;
+            /* increase the size no of times when sizer is available (-ve no are invalid) */
+
+        }
+
+        #item2 {
+            /* order: 20; */
+            /* it will shrink first while shrinking*/
+            /* flex-shrink: 3; */
+            flex-basis: 320px;
+            /* when felx direction is set to row felx basis will control width
+            when felx direction is set to column felx basis will control height */
+        }
+
+        #item3 {
+            /* order: 40; */
+            /* flex: 2 2 344px; */
+            /* flex shring, flex grow flex basis */
+
+            /* used to align item at bottom top and center */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time to use Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third</div>
+        <!-- <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div> -->
+    </div>
+</body>
+
+</html>

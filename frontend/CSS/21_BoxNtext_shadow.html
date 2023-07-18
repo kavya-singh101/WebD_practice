@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .conatiner {
+            display: flex;
+
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: greenyellow;
+            /* box-shadow: 10px 13px aqua; /*shoadows at down (y-axis) and right (x-axis)*/
+            /* box-shadow: -10px -13px aqua; shoadows at up (y-axis) and left (x-axis) */
+            /* box-shadow: 7px 5px 10px 14px rgba(27, 164, 210, 0.5); the more the 3rd no. the more blur it makes the shadow */
+            /* box-shadow: 7px 5px -13px aqua; -ve the 3rd no., it will reverse the shadow but it will not overrite the previous property */
+            /* the 4th one is known as spread radious used to spread the shadow */
+            /* in rgba 'a' refers to contrast/opacity */
+
+            box-shadow: inset 3px 5px cyan, 3px 5px red;
+            /*The shaadow will start flowing inside the box*/
+            /* you can also give more tha one shadow just by using commas */
+        }
+
+        .card h2 {
+            /* as same as box shadow */
+            text-shadow: 2px 1px 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="card" id="card-1">
+            <h2> Card1 </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, exercitationem! Sint repellendus ipsa
+                temporibus impedit maiores et! Labore, praesentium nisi consectetur quas ipsam quo voluptas sint,
+                molestiae repellendus recusandae facilis aspernatur ducimus, nam quasi deserunt!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> CSS course </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, exercitationem! Sint repellendus ipsa
+                temporibus impedit maiores et! Labore, praesentium nisi consectetur quas ipsam quo voluptas sint,
+                molestiae repellendus recusandae facilis aspernatur ducimus, nam quasi deserunt!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> Card3 </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, exercitationem! Sint repellendus ipsa
+                temporibus impedit maiores et! Labore, praesentium nisi consectetur quas ipsam quo voluptas sint,
+                molestiae repellendus recusandae facilis aspernatur ducimus, nam quasi deserunt!</p>
+        </div>
+    </div>
+</body>
+
+</html>

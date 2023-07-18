@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events an Listening Using JS</title>
+    <style>
+        #btn {
+            padding: 5px 10px;
+            margin: 0px 10px;
+            color: black;
+            background-color: aqua;
+            font-weight: bold;
+            border: 2px solid red;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h2>This is my para which you can hide or show</h2>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo fuga minima beatae. Beatae
+            asperiores commodi dolorum aliquam ad quae! Ex accusamus beatae labore consectetur consequatur quibusdam!
+            Odit consequuntur fugiat libero molestias in atque. Neque modi, est nemo iure cum veritatis inventore sit
+            molestiae odit ullam at, numquam nobis! Optio deleniti recusandae aliquam cum quis adipisci corporis ea
+            voluptatibus? Odio dignissimos enim ut! Nam, accusamus tenetur! Accusamus id deserunt esse hic aliquam
+            dolorem aliquid voluptates accusantium praesentium rem ad libero, delectus, repudiandae fugit! Consequuntur
+            unde inventore rem minima reiciendis officia laborum totam reprehenderit veritatis voluptatibus molestiae
+            soluta voluptas iure, impedit voluptatem.</p>
+
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+
+    <script>
+        function toggleHide() {
+            let para=document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+        para.addEventListener('mouseover', function run(){
+            alert('Your mouse is inside the para');
+            console.log('Your mouse is inside the para');
+        });
+        para.addEventListener('mouseout', function run(){
+            console.log('Your mouse is outside the para');
+            alert('Your mouse is outside the para');
+        });
+    </script>
+</body>
+
+</html>

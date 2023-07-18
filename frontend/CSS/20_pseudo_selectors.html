@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo selectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* background: url('https://images.unsplash.com/photo-1503524921528-8f5fa912ea75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover; */
+        }
+
+                                                /* IMPORTANT */
+
+        header::before{
+            background: url('https://images.unsplash.com/photo-1631472548473-3e1a1c74baeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            height: 444px;
+            /* border: 2px solid red; */
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* to make content in center in flex box */
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* it will print before the element start */
+        /* section::before {
+            content: "This is my content";
+        } */
+
+        /* it will print after the element start */
+        section::after {
+            content: "This is my content";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="items">Home</li>
+                <li class="items">About</li>
+                <li class="items">Services</li>
+                <li class="items">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to coding</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nisi adipisci obcaecati ut amet rem
+            voluptatem id ipsam dolorem labore sunt quos ad odit natus temporibus quisquam aliquam vero quas!</p>
+    </section>
+    <hr>
+</body>
+
+</html>

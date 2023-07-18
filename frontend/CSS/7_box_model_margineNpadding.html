@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margine and Padding</title>
+    <style>
+        /* ita ia a universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* using this you can add anything in background */
+        body{
+            background-color: red;
+        }
+        .container{
+            background-color: lightblue;
+            border: 3px solid blue;
+            border-radius: 15px;
+            /* padding: 9px; */
+            padding-top: 9px; /*ued to increase a the margin b/w border and the element at top side*/
+            padding-left: 20px;
+            /* we can set top bottm left right like this */
+            padding: 10px 20px 15 px 25px; /*padding= top right bottom left it's clocl wose*/
+            padding: 30px 19px;/* padding: y(top/bottom) x(left/right); */
+
+            margin: 13px 19px;
+            /* you can use margin top, bottom,left and right */
+
+            width: 550px;
+            /* although if you increase padding and margin then width will change according to them  */
+            box-sizing: border-box; /*using this it can adjust it's width with the box size if you increase the padding or margin*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illo, nemo aut, ut nobis fugiat debitis veritatis, id quisquam iusto est numquam facere. Quos, culpa aliquid! Voluptates, maxime! Maiores, repellat.</p>
+    </div>
+
+    <div class="container">
+        <h3>Heading 2</h3>
+        <p id="second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illo, nemo aut, ut nobis fugiat debitis veritatis, id quisquam iusto est numquam facere. Quos, culpa aliquid! Voluptates, maxime! Maiores, repellat.</p>
+    </div>
+
+    <div class="container">
+        <h3>Heading 3</h3>
+        <p id="third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illo, nemo aut, ut nobis fugiat debitis veritatis, id quisquam iusto est numquam facere. Quos, culpa aliquid! Voluptates, maxime! Maiores, repellat.</p>
+    </div>
+</body>
+</html>

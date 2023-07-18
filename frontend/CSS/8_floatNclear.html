@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Float and Clear (Alignments)</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* used to adjust the box */
+        }
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgb(250, 226, 205);
+            margin: 33px auto; 
+            /*it will automatically adjust the border at the center means equi distance from left and right only and 33px from the top means y axis*/
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+        #fruit{
+            float: left; /*it will adjust the boz to left side */
+            width: 48%; /*i will adjust width of 50% the original width*/
+        }
+        #vegetable{
+            float: right; /*it will adjust the boz to left side */
+            width: 48%; /*i will adjust width of 50% the original width*/
+        }
+        #electronic{
+            /* float: left; it will adjust the boz to left side */
+            clear: left; /*it wiil not allow any float left element to overlap it*/
+            clear: both; /*now no once can overlap it*/
+            width: 100%; /*i will adjust width of 50% the original width*/
+        }
+        p, h3{
+            /* text-align: right;
+            text-align: left; */
+            text-align: center;
+            /* text-align: justify; */
+        }
+        h1{
+            margin: 23px auto;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome here</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos? Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem perspiciatis ipsam laborum neque.</p>
+        </div>
+
+        <div id="vegetable" class="item">
+            <h3>Vegetables</h3>
+            <p id="vegetablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos? Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem perspiciatis ipsam laborum neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, modi.</p>
+        </div>
+
+        <div id="electronic" class="item">
+            <h3>Electronics</h3>
+            <p id="electronicspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos? Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem perspiciatis ipsam laborum neque.</p>
+        </div>
+
+        <!-- <div id="glass" class="item">
+            <h3>Glasses</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque explicabo illo error molestias architecto eligendi quidem dolorum veniam, nisi quaerat vero praesentium molestiae tempore nobis consectetur magnam labore dignissimos blanditiis commodi nihil! Repellat, quos? Aliquam perferendis culpa debitis. Quod minima nobis, accusamus nisi doloribus exercitationem perspiciatis ipsam laborum neque.</p>
+        </div> -->
+    </div>
+</body>
+</html>

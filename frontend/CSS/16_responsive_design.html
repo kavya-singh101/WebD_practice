@@ -1,0 +1,67 @@
+<!-- what is responsive?
+->responsive design is way to make website adapt to all the devices and resolutions
+it is necessary to use in all websites. -->
+
+<!-- ways to achieve resopnsive design:-
+1. setting up the view port
+2. use max-width/max-height
+3. using css media queries
+4. using rem/vh/vw units over px -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design (size units)</title>
+
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            width: 440px;
+            /* will cover whole width of your page */
+            width: 100vw;
+            height: 344px;
+
+            /* will cover whole height of your page */
+            height: 100vh;
+
+            font-size: 10px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        #f1 {
+            /* it will take the 3x size of their parent  */
+            /* font-size: 3em; */
+            /* it will take 3x the font size of 'f1' */
+            /* padding: 3em; */
+        }
+
+        #f2 {
+            /* it will resize itself in compare to root element (that is html) 3x25 px */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="f1">This is 1st heading</h1>
+        <h1 id="f2">This is 2nd heading</h1>
+        <h1 id="f3">This is 3rd heading</h1>
+    </div>
+
+</body>
+
+</html>

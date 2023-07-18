@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- # i called pound here -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: red;
+        }
+        #green {
+            color: green;
+        }
+        /*all element having id green will be converted into green colour but we don't prefer more than one element to use same id, so we use class insted of using id for this purpose*/
+        #third_p {
+            color: blue;
+            background-color: red;
+        }
+        .bg_orange{
+            background-color: orange;
+        }
+        /* all element having class bg_orange will be converte their background into orange colour */
+        /* its a grouping selector */
+        footer, span{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>css Selectors</h3>
+    <p>this is a para designed by element selector</p>
+    <p id="green">this is a para designed by id selector</p>
+    <p id="third_p">this is 3rd para designed by id selector</p>
+    <p class="bg_orange">This is a para designed by class selector</p>
+    <span>this is span and both are designed by group selector</span>
+    <footer>this is footer and both are designed by group selector</footer>
+</body>
+
+</html>

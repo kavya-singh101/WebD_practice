@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries using grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+
+        }
+
+        @media (max-width:500px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+            aside {
+                display: none;
+            }
+
+            span{
+                display: block;
+            }
+
+        }
+
+        @media (max-width:800px) and (min-width:500.1px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer'
+                ;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (max-width:1000px) and (min-width:800.1px) {
+            body {
+                background-color: green;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+                ;
+            }
+            span{
+                display: block;
+            }
+
+        }
+
+        @media (min-width:1000.1px) {
+            body {
+                background-color: blue;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: aqua;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>help</span>
+        </nav>
+
+        <section class="bdr">
+            <h2>Welcome to Web D.</h2>
+        </section>
+
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">content may subject to copyright</footer>
+</body>
+
+</html>

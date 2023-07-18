@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Using JS</title>
+    <style>
+        .navigator{
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conat" id="container">
+        hello world
+    </div>
+    <ul class="navigation" id="nav">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>About</li>
+    </ul>
+    <ul class="navigation">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>About</li>
+    </ul>
+    <ul class="navigation">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>About</li>
+    </ul>
+    <script>
+
+        let id_ = document.getElementById('container');
+        // it will store data in the form of an array
+        let klass = document.getElementsByClassName("navigation");
+        console.log(id_);
+
+        for(elem of klass){
+            console.log(elem);
+        }
+
+        // for printing any html code using id
+        console.log(nav.innerHTML);
+        // for changing any html code using id
+        nav.innerHTML = "<li>I am Cool</li>";
+
+        let sel=document.querySelector(".navigation");
+        
+        console.log(`The 1st selector is ${sel}`);
+
+        let Lsel=document.querySelectorAll(".navigation");
+        
+        for(elem of Lsel){
+            console.log(elem);
+        }
+    </script>
+</body>
+
+</html>

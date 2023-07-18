@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+
+<body>
+    <h2>____Forms____</h2>
+    <hr>
+    <form action="backend.php"> <!--you give your form to a backend
+        (it is a endpoint where it submit your data to backend) -->
+        <label for="name">Name:</label>
+        <!-- if you click 'name' then you tab automatically selected and 'for' is always equal to 'id' -->
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <!-- div used for division or new line -->
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="datetime" name="mydatetime">
+            date <input type="date" name="mydate">
+
+        </div>
+        <br>
+        <div>
+            Mobile No: <div><br> Father <input type="number" name="myNumber" > 
+            Mother <input type="number" name="myNumber">
+            </div>
+        </div>
+        <!-- you can use 'e' also in number -->
+        <br>
+        <label for="Applicable">Applicable:</label>
+        <div>
+            yes <input type="checkbox" name="myApplicable" id="Applicable" checked> no <input type="checkbox"
+                name="myApplicable" id="Applicable">
+            <!-- if you want to check a box by default the use 'checked' at the last -->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            write about me: <br><textarea name="MyText" rows="10" cols="30"></textarea>
+            <!-- here you can write paras and user can also adjust the length by draging the box -->
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indiga</option>
+                <option value="swf" selected>Swift</option>
+                <!-- use selected keyword to default select an option -->
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform properties</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cyan;
+        }
+        .box{
+            display: flex;
+            background: linear-gradient(to right, rgb(123, 255, 0), rgb(174, 0, 255));
+            border: 2px dashed black;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            height: 400px;
+            width: 400px;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            /* roate box towards left */
+            transform: rotate(360deg);                                                                              
+            /* l and r edge slide left to right */
+            transform: skew(45deg);
+            /* increase the size no. of times */
+            transform: scale(1.5);
+            /* goes no of units downward for y and right for x*/
+            transform: translateX(200px);
+            transform: translatey(200px);
+            /* moves bottom right side */
+            transform: translate(230px, 230px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Transform properties box
+        </div>
+    </div>
+</body>
+</html>

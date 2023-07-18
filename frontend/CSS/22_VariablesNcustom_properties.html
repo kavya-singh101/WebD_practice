@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables / Custom Properties</title>
+    <style>
+        :root {
+            /* this box is used to make global variables */
+            --box-color: blue;
+            --shaded-color: linear-gradient(to right, #006aff, #02fff2);
+            --maxw: 800px;
+        }
+
+        .box {
+            /* using this you can store any property in the form of a varible 
+            if you cange this then all property inherit this will be changed */
+            --box-color: blue;
+            /* it is a local variable because it is inside .box class */
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            /* this will change the colour of the box from left to right(if you use 'to right')from initial colour to final colour (by default it is top to bottom)*/
+            /* use 0deg for bottom to top */
+            background: linear-gradient(.25turn, red, 10%, #f77503);
+            /* decrease red by 10% box size */
+
+            /* background: linear-gradient(45deg, red 0 50%, blue 50% 100%); */
+            /* colour the box half red and half blue at the edges */
+
+            border: 2px solid red;
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            background: var(--shaded-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: red; */
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

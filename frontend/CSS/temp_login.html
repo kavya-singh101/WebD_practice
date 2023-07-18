@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="temp_login.css">
+  <title>HASH TECHIE OFFICIAL</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="myInput">
+                        <label for="">Password</label>
+                        <!-- <input type="checkbox" onclick="myFunction()">Show Password  -->
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox" checked>Remember Me &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Forget Password</a></label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+    <!-- <script>
+        function createStar() {
+          const star = document.createElement('div');
+          star.className = 'star';
+          star.style.left = Math.random() * 100 + 'vw';
+          star.style.top = Math.random() * 100 + 'vh';
+          star.style.animationDuration = Math.random() * 3 + 1 + 's';
+          star.style.animationDelay = Math.random() * 2 + 's';
+          document.body.appendChild(star);
+    
+          star.addEventListener('animationend', () => {
+            star.remove();
+            createStar();
+          });
+        }
+    
+        const numStars = 30;
+        for (let i = 0; i < numStars; i++) {
+          createStar();
+        }
+    </script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

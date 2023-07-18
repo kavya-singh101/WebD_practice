@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #first {
+            background-color: blue;
+            height: 50px;
+            width: 425px;
+            /* border-color: green;
+            border-style: solid;
+            border-width: 4px; */
+            /* for writing all three in one line */
+            border: 3.4px solid green;
+            border-radius: 9px;
+        }
+        #second{
+            background-color: rgb(222, 18, 18);
+            height: 50px;
+            width: 425px;
+            border-top: 3px solid green;
+            border-right: 3px solid silver;
+            border-left: 3px solid yellowgreen;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 25px;
+        }
+        #third{
+            color: blue;
+            background-color: yellow;
+            height: 800px;
+            /* width: 1025px; */
+            width: 1025px;
+            background-image:url('/wp6665557.webp');
+            border: 3px solid red;
+            background-repeat: no-repeat; /*repeat x and y will make stop it repeating on respective axis*/
+            /* background-position: center top;*//*you can adjust by you own choice */
+            /*background-position: 122px top;/*you can adjust this margin from the border if the image is short*/
+            background-position: 122px 50px;/*here both side represent x and y axis*/
+            background-position: center center; /*it will automatically adjust from both x and y axis at equal distance*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Height, width, Borders and Backgrounds</h2>
+    <p id="first">This is my first paragraph in this page</p>
+    <p id="second">This is my second paragraph in this page</p>
+    <p id="third">This is my third paragraph in this page</p>
+</body>
+
+</html>

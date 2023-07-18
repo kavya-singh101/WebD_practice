@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(163, 185, 121);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+
+        .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: crimson;
+            padding: 3px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+
+        .btn:hover{
+            color: darkgoldenrod;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: skyblue;
+        }
+
+        /* hover means if anyone wants point their cursor in it then it will become perform the task given below */
+        a:hover {
+            color: red;
+            /*colour will change when you point a cursor on read more*/
+            background-color: aqua;
+        }
+
+        /* it means if you place and cursor and hold a click there the the following task will be performed */
+        a:active {
+            background-color: rgb(204, 31, 158);
+        }
+
+        /* when you click on it then a new page wiil open or prev page converted into new */
+        a:visited {
+            color: darkblue;
+            background-color: gold;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur blanditiis provident ad dolore ratione
+            eum libero odio sunt et! Officia excepturi iusto dolore necessitatibus provident velit accusamus quas esse
+            veritatis, illum odio exercitationem, tenetur sapiente.</p>
+        <a href="https://www.google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>

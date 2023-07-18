@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+
+    <script>
+        var a=-8;
+        b1=7;
+        var b='Hello';
+        var c="Hello";
+        var d=`Hello`;
+        console.log(a, b, c, d);
+        a=-a //urinary operator
+        console.log(`applying urinary operator on 'a'=`,a)
+        console.log(`applying urinary operator on 'a+5'=`,a+5)
+        //arithmetic operators
+        console.log(`a + b= `, a+b1);
+        console.log(`a - b= `, a-b1);
+        console.log(`a * b= `, a*b1);
+        console.log(`a % b= `, a%b1);
+        console.log(`a / b= `, a/b1);
+        console.log(`a ** b= `, a**b1);
+        //increment and decrement operators
+        console.log(`a++= `, a++);
+        console.log(`++a= `, ++a);
+
+        var name=`Kavya`;
+        var surname=`Singh`
+        var gender=`Male`;
+        console.log(`${name} is a ${gender}\nFull name is ${name + surname}`);
+        //to find the length of any string
+        var len=name.length;
+        console.log(`length of Name= ${len}`);
+
+        // string slicing
+        console.log(name[1]);
+
+        // Making a string using a sting constructor 
+        var y= String('hello');
+        console.log(y);
+        
+    </script>
+</body>
+</html>

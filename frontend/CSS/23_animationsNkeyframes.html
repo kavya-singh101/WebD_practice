@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        .container {
+            background-color: red;
+        }
+
+        .box {
+            background-color: rgb(1, 255, 166);
+            width: 250px;
+            height: 250px;
+            position: relative;
+            text-align: center;
+            padding-top: 10px;
+
+            animation-name: kavya1;
+            animation-name: kavya2;
+            /* no of sec your animation will run  */
+            animation-duration: 2s;
+            /* no of times your animation run */
+            animation-iteration-count: infinite;
+            /* animation-iteration-count: 2; */
+            /* if you want to stay on the final position of your animation */
+            /* animation-fill-mode: forwards; */
+            /* come back to original position */
+            animation-fill-mode: alternate;
+
+            /* using 'ease-in' firstly animation goes slowly then get fast */
+            /* ease-out is vice versa. in 'ease-in-out' first slow mid fast then again slow */
+            animation-timing-function: ease-in;
+            /* used to apply delay at the starting */
+            animation-delay: 1.5s;
+
+            /* first left to right then right to left and complete 2 round */
+            animation-direction: alternate;
+            /* sirstly it will animate then come back to original and this will continue */
+
+            /* animation-direction: reverse;
+            animation-direction: alternate-reverse; */
+
+
+            /* this is a one liner for all of above */
+            /* animation: name duration timing delay iteration-count animation-fill-mode; */
+            
+            /* animation: kavya 5s ease-in 2s 12 backwards; */
+        }
+
+        @keyframes kavya1 {
+            from {
+                width: 200px;
+                border-radius: 0px;
+            }
+
+            to {
+                width: 1400px;
+                border-radius: 100%;
+            }
+        }
+
+        @keyframes kavya2{
+            /* the are the %age of animation done till now */
+            0%{
+                border-radius: 0%;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                border-radius: 50%;
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                border-radius: 50%;
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                border-radius: 50%;
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                border-radius: 0%;
+                top: 0px;
+                left: 0px;
+            }
+        
+        }
+
+        /* @keyframes kavya{
+            the are the %age of animation done till now
+            0%{
+                border-radius: 0%;
+                top: 0%;
+                left: 50%;
+            }
+            25%{
+                border-radius: 50%;
+                top: 25%;
+                left: 25%;
+            }
+            50%{
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+            }
+            75%{
+                border-radius: 50%;
+                top: 25%;
+                left: 75%;
+            }
+            100%{
+                border-radius: 0%;
+                top: 0%;
+                left: 50%;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

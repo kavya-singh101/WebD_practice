@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes and Control statements</title>
+</head>
+<body>
+    <script>
+        // var is global let is local and const is fixed
+        var a=56;
+        // preferable to always use let for declaring variables
+        let b=87;
+        {
+            let b=98;
+        }
+        const c=98;
+
+        // conditionals statements
+        // if, else, else if 
+        let z=19;
+        if(z<11){
+            console.log(`You are not even 11 year old`);
+        }
+        else if(z<18){
+            console.log(`You can't drive`);
+        }
+        else{
+            console.log(`Congrats! You can Drive `);
+        }
+
+        // switch case statements
+        let x=100;
+        switch (x) {
+            case 10:
+                console.log(`Not even closer`);
+                break;
+            case 20:
+                console.log(`Not even closer`);
+                break;
+            case 50:
+                console.log(`Not even closer`);
+                break;
+            case 90:
+                console.log(`So close`);
+                break;
+            case 100:
+                console.log(`Absolutely correct`);
+                break;
+        
+            default:
+                console.log(`You exceed the value`);
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval and SetTimeout</title>
+</head>
+<body>
+    <script>
+        function greet(name,text) {
+            console.log(`hello ${name}!\n${text}.`);
+        }
+        let timeout=setTimeout(greet,5000,'kavya','Nice to meet you');
+
+        // to stop the timeout
+        clearTimeout(timeout);
+
+        let interval=setInterval(greet,2000,'hunny','you are amazing');
+
+        // to stop it 
+        clearInterval(interval);
+    </script>
+</body>
+</html>

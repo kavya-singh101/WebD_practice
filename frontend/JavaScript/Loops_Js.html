@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+<body>
+    <div>
+        hello world
+    </div>
+    <script>
+        // for loop
+        let arr=['kavya','hunny','keerti','kartik','divyansh'];
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        // for each loop(new)
+        console.log(' using for-each loop:- ');
+
+        arr.forEach(element => {
+            console.log(element);
+        });
+
+        // for each loop(old)
+        console.log(' using for-each old method:- ');
+
+        arr.forEach(function f(element){
+            console.log(element);
+        });
+
+        // for-of loop
+        console.log(' using for of loop:-');
+        for(element of arr){
+            console.log(element);
+        }
+
+        // for in loop(used for objects)
+        console.log(' using for in loop (for objects):-');
+        let obj={
+            name:'Kavya',
+            job:'developer', 
+            salary: 50000,
+            exp: '4 years'
+        };
+
+        for (key in obj) {
+            console.log(`${key} --> ${obj[key]}`);
+        }
+
+        // while and do-while loop
+        let z=0;
+        while (z<5) {
+            console.log(z,' is less than 5');
+            z++;
+        }
+
+        let x=35
+        do {
+            console.log(x,' is not less than 5 but still it will run because we are in do while loop');
+        } while (x<5);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and lists</title>
+</head>
+
+<body>
+    <!-- lists -->
+    <ul type="circle"> <!-- ul stands for unordered it gives disc, square, circle -->
+        <!-- by default it takes disc -->
+        <li>This the 1st element of my unordered list</li>
+        <li>This the 2nd element of my unordered list</li>
+        <li>
+            <ul>
+                <li>another unordered list inside list element</li>
+                <li>another unordered list 2nd inside list element</li>
+            </ul>
+            <!-- list items in another list item -->
+        </li>
+        <li>This the 3rd element of my unordered list</li>
+        <li>This the 4th element of my unordered list</li>
+        <ol type="i">
+            <li>ordered list inside unordered list</li>
+            <li>ordered list inside unordered list</li>
+        </ol>
+    </ul>
+    <!-- ol is ordered list & li is list element -->
+    <ol type="A"> <!-- you can use A,a,1,i and I -->
+        <!-- by default it takes 1 -->
+        <li>This the 1st element of my ordered list</li>
+        <li>
+            <ul type="square">
+                <li>unordered list inside ordered list element</li>
+                <li>unordered list inside ordered list element</li>
+            </ul>
+        </li>
+        <li>This the 2nd element of my ordered list</li>
+        <li>This the 3rd element of my ordered list</li>
+    </ol>
+
+    <!-- tables -->
+    <h3>HTML TABLE</h3>
+    <table>
+        <thead> <!--it contains the heading part of a table-->
+            <tr> <!--it's always in row format means horizontal-->
+                <th>Name</th>
+                <th>Semister of study</th>
+                <th>Roll. no</th>
+            </tr>
+        </thead>
+        <tbody> <!--It conatins the data of table-->
+            <tr>
+                <td>Kavya Singh</td>
+                <td>semister 3</td>
+                <td>B 16</td>
+            </tr>
+            <tr>
+                <td>Bhagwant Singh</td>
+                <td>semister 7</td>
+                <td>B 1</td>
+            </tr>
+            <tr>
+                <td>Renu Singh</td>
+                <td>semister 5</td>
+                <td>B 6</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+
+</html>

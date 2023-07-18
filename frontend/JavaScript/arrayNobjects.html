@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="test">
+        hello
+    </div>
+
+    <script>
+        // some other types of datatypes 
+        let a = null;
+        let b = undefined;
+        let c = true;
+
+        // Objects
+        let emp = {
+            name: 'Kavya',
+            sem: 3,
+            age: 18,
+            'sap id': 6891
+        };
+
+        console.log(emp);
+        // Both are same
+        console.log(emp.age);
+        console.log(emp['age']);
+        // for any space between key only thing you can use
+        console.log(emp['sap id']);
+
+
+        // Arrays
+        let arr = [3, 5, 2, 4, 'hello', undefined];
+        console.log(arr);
+        console.log(arr[4]);
+        console.log(arr.length);
+        console.log(arr.sort());
+        // for entering element at the last
+        arr.push('world');
+        console.log(arr);
+
+        // it will made 23 empty elements inside the array
+        arr2=new Array(23);
+        console.log(arr2);
+    </script>
+</body>
+
+</html>
